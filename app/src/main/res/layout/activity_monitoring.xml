@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MonitoringActivity">
+
+    <TextView
+        android:id="@+id/textKontrolMenyalakanAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Pilih Menu Monitor"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonKelembapanTanah"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_buttom"
+        android:text="Kelembapan Tanah"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonDebitAir"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_buttom"
+        android:text="Debit Air"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonSuhuCahaya"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_buttom"
+        android:text="Suhu"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

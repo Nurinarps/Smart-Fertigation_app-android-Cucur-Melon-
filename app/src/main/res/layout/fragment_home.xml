@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/tampilan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Pilih Menu"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonKontroling"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background= "@drawable/custom_buttom"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kontroling"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/commit"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="20dp"/>
+
+    <Button
+        android:id="@+id/buttonMonitoring"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_buttom"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Monitoring"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/monitoring"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="20dp"/>
+</LinearLayout>

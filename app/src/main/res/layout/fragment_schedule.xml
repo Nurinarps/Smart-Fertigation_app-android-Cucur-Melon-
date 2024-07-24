@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.schedule.ScheduleFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Waktu Sekarang"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/clok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tanggal"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Setting timer Penyiraman"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <!-- GridLayout for Timers -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="20dp">
+
+        <!-- Timer Jadwal 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer Jadwal 1"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextTimerHour1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text=":"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <EditText
+                    android:id="@+id/editTextTimerMinute1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Timer Jadwal 4 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer Jadwal 4"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextTimerHour4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text=":"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <EditText
+                    android:id="@+id/editTextTimerMinute4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Timer Jadwal 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer Jadwal 2"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextTimerHour2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text=":"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <EditText
+                    android:id="@+id/editTextTimerMinute2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Timer Jadwal 5 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer Jadwal 5"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextTimerHour5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text=":"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <EditText
+                    android:id="@+id/editTextTimerMinute5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Timer Jadwal 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer Jadwal 3"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textAlignment="center"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextTimerHour3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text=":"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <EditText
+                    android:id="@+id/editTextTimerMinute3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Button to update schedules -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Update Jadwal"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_buttom"
+        android:layout_gravity="center" />
+
+</LinearLayout>

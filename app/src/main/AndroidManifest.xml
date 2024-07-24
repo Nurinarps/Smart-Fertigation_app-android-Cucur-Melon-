@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Cucur Melon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CucurMelo"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.monitoring.suhu_cahaya.Suhu_CahayaActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".MonitoringActivity"/>
+        <activity
+            android:name=".ui.monitoring.detail_debit_air.DebitAirActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".MonitoringActivity"/>
+        <activity
+            android:name=".ui.monitoring.detail_kelembapan.DetailKelembapanActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".MonitoringActivity"/>
+        <activity
+            android:name=".MonitoringActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KontrolingActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SolenoidValveActivity"
+            android:exported="false"
+            android:label="Kembali"
+            android:parentActivityName=".KontrolingActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Cucur Melon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ui.schedule.AlarmReceiver"/>
+        <receiver android:name=".ui.schedule.WateringStopReceiver"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context=".ui.monitoring.detail_debit_air.DebitAirActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jumlah Air  (ml/detik) "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="133dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/air" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_buttom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDebitAir"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingHorizontal="29dp"
+            android:paddingVertical="20dp"
+            android:text="Sensor A  :  "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_buttom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDebitAir2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingHorizontal="29dp"
+            android:paddingVertical="20dp"
+            android:text="Sensor B  :  "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_buttom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDebitAir3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingHorizontal="29dp"
+            android:paddingVertical="20dp"
+            android:text="Sensor C  :  "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Reload Debit Air"
+        android:background="@drawable/custom_buttom"/>
+</LinearLayout>

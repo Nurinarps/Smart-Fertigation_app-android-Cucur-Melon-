@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "563117141684",
+    "firebase_url": "https://fertigasi-tanaman-cae25-default-rtdb.firebaseio.com",
+    "project_id": "fertigasi-tanaman-cae25",
+    "storage_bucket": "fertigasi-tanaman-cae25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117141684:android:996b62ae8c388bcb0431e1",
+        "android_client_info": {
+          "package_name": "com.example.cucurmelo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBryZdmx9gxz7YO9f-Q6HBIbN8NrXdQN4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
